@@ -15,7 +15,9 @@ The Project consists of 2 Boards:
 Note that I designed it to be used with 12V Fans (partly because I have loads of 12V Fans laying around). As you need all available airflow you can get, using 12V Fans with 12V seems a better Idea to me that using 24V fans with only 20V as this would mean loosing some power. If the interest is great enough I might add a stepup circuitry to provide 24V for the fans. I don't think its a good idea to step up heater-cartridge voltages as well, as this would mean I need to supply about 3A of current with a step up which generally will generate a considerable amout of heat (same goes for stepping down 20V to 12V). 
 
 Right now I'm planning on using standard "non e-marked" USB-C cables which will result up to 60W of power which can be used in the toolhead (Feeder PCB can already provide 100W!). I'm not sure if the used PD-Source and Sink frondends are capable of using the 100W e-marked cables. Thats something which I have to try out.
-Update: It seems like nothing is watching if you are limiting yourself to 60W (e.g. 3A@20V) which means you can use up to 100W power over a "standard" non-marked Cable. Might add a 5A fuse in the future. USE PROPER CABLES for now.
+
+**Update:** It seems like nothing is watching if you are limiting yourself to 60W (e.g. 3A@20V) which means you can use up to 100W power over a "standard" non-marked Cable. Might add a 5A fuse in the future. **USE PROPER CABLES** for now.
+
 Using 24V/40W heater cartridges with 20V will decrease power consumption to about 30W wich (I guess) should be enough for the standard Voron user (not enough though for High-Speed/High-Flow printing etc). That leaves 30W for the stepper-motors, fans etc. (should be plenty enough)
 
 
