@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------------------------------------------------------------------
-NCDrill File Report For: PowerFeeder_X4_Panel.PcbDoc   20.05.2023  23:43:49
+NCDrill File Report For: PowerFeeder_X4_Panel.PcbDoc   30.05.2023  22:52:00
 ----------------------------------------------------------------------------------------------------------------------------------
 
 Layer Pair : Top Layer to Bottom Layer
@@ -9,7 +9,7 @@ ASCII Plated SlotHoles File : PowerFeeder_X4_Panel-SlotHoles-Plated.TXT
 
 Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
 ----------------------------------------------------------------------------------------------------------------------------------
-T1      12mil (0.3mm)                                             Round             630       PTH        41.80inch (1061.75mm)
+T1      12mil (0.3mm)                                             Round             630       PTH        41.53inch (1054.95mm)
 T2      28mil (0.7mm)                                             Slot              20        PTH        13.49inch (342.61mm)
 T3      39mil (1mm)                                               Round             8         PTH        2.76inch (70.00mm)
 T4      55mil (1.397mm)                                           Round             1         PTH        0.00inch (0.00mm)

@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------------------------------------------------------------------
-NCDrill File Report For: StealthBurner-PD_Panel.PcbDoc   28.05.2023  14:47:59
+NCDrill File Report For: StealthBurner-PD_Panel.PcbDoc   30.05.2023  23:00:49
 ----------------------------------------------------------------------------------------------------------------------------------
 
 Layer Pair : Signal Top to Signal Bot
@@ -9,7 +9,7 @@ ASCII Plated SlotHoles File : StealthBurner-PD_Panel-SlotHoles-Plated.TXT
 
 Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
 ----------------------------------------------------------------------------------------------------------------------------------
-T1      8mil (0.2mm)                                              Round             144       PTH        17.78inch (451.71mm)
+T1      8mil (0.2mm)                                              Round             147       PTH        17.05inch (433.04mm)
 T2      28mil (0.7mm)                                             Slot              4         PTH        1.48inch (37.51mm)
 T3      35mil (0.889mm)                                           Round             15        PTH        1.87inch (47.62mm)
 T4      36mil (0.914mm)                                           Round             18        PTH        2.30inch (58.42mm)
@@ -20,6 +20,6 @@ T8      87mil (2.2mm)                                             Round         
 T9      126mil (3.2mm)                                            Round             2         PTH        0.69inch (17.51mm)
 T10     27mil (0.675mm)                                           Round             2         NPTH       0.23inch (5.78mm)
 ----------------------------------------------------------------------------------------------------------------------------------
-Totals                                                                              208
+Totals                                                                              211
 
 Total Processing Time (hh:mm:ss) : 00:00:04
