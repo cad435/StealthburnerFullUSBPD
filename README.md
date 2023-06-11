@@ -22,3 +22,6 @@ anyways, it's worth a try, this is ongoing, I'll push updates whenever I have ti
 
 
 Licensed under Open Source Hardware Association license https://www.oshwa.org/definition/
+
+
+![Konzept](https://github.com/cad435/StealthburnerFullUSBPD/assets/16453385/6de83345-7aa8-42fd-a45c-025c5a4657a1)
