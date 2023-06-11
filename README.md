@@ -3,6 +3,8 @@ Two PCB's to connect a Voron Stealthburner Toolhead via USB-PD providing both po
 
 This is aimed at people which are either having some kind of toolchanging system (like me) or are for whatever reason are changing their toolheads often. Upsides of this project compared to CAN: One cable does it all. Plug it in, it'll work. Well and of course people who think USB-C is cool...
 
+![Konzept](https://github.com/cad435/StealthburnerFullUSBPD/assets/16453385/6de83345-7aa8-42fd-a45c-025c5a4657a1)
+
 Out of my latest Project (Voron 2.4 with toolchanger) I felt the need to simplify connecting Stealthburner-Toolheads to the printer. USB-C PowerDelivery seems suitable. Although it'll only provide 20V to the Toolhead instead of the 24V, it should be good enough.
 
 I asked around at the Voron-Discord (May 2023), only to find out that there was an attempt by Mellow, but it was taken out of the market. So I sat down and created my own.
@@ -25,6 +27,3 @@ anyways, it's worth a try, this is ongoing, I'll push updates whenever I have ti
 
 
 Licensed under Open Source Hardware Association license https://www.oshwa.org/definition/
-
-
-![Konzept](https://github.com/cad435/StealthburnerFullUSBPD/assets/16453385/6de83345-7aa8-42fd-a45c-025c5a4657a1)
