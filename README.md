@@ -18,7 +18,6 @@ Note that I designed it to be used with 12V Fans (partly because I have loads of
 
 Right now I'm planning on using standard "non e-marked" USB-C cables which will result up to 60W of power which can be used in the toolhead (Feeder PCB can already provide 100W!). I'm not sure if the used PD-Source and Sink frondends are capable of using the 100W e-marked cables. Thats something which I have to try out.
 
-**Update:** It seems like nothing is watching if you are limiting yourself to 60W (e.g. 3A@20V) which means you can use up to 100W power over a "standard" non-marked Cable. Might add a 5A fuse in the future. **USE PROPER CABLES** for now.
 
 Using 24V/40W heater cartridges with 20V will decrease power consumption to about 30W wich (I guess) should be enough for the standard Voron user (not enough though for High-Speed/High-Flow printing etc). That leaves 30W for the stepper-motors, fans etc. (should be plenty enough)
 
@@ -27,3 +26,15 @@ anyways, it's worth a try, this is ongoing, I'll push updates whenever I have ti
 
 
 Licensed under Open Source Hardware Association license https://www.oshwa.org/definition/
+
+___
+
+**Update 2023-06-08:** It seems like nothing is watching if you are limiting yourself to 60W (e.g. 3A@20V) which means you can use up to 100W power over a "standard" non-marked Cable. Might add a 5A fuse in the future. **USE PROPER CABLES** for now.
+
+**Update 2023-07-19:** The IP2701 I'm using in the Power-Feeder board will not work. Unfortunately I missinterpreted the datasheet: this chip talks a bunch of protocols at the USB2.0 D+/D- datalines (for example QC2.0/3.0) as well as USB Type-C Power-Protocol over the USB-C CC-Lines which is 5V@3A. Unfortunately it will NOT talk USB-PD over the CC-lines. We do **NOT** want to use a protocoll like  QC2.0/3.0 as it'll use the USB 2.0 D+/D- lines, wich we need for communication. I already ordered some new chips (TPS25740BRGET) but that means I need to redo the PCB (Also that TPS25740 is already NRND albeit in active production which bothers me a bit). 
+
+Alternatives are rare, as I try to find IC's which are not overly complicated and requires loads of loads of external components. I suspect more IC's of manufacturers like INJOINIC or WCH to slowly get those "one in a package" IC's for PD.
+
+Possible Candidates:
++ IP5389 which essentially combines the Buck converter and PD-source into one IC (but those chips are only available on taobao, seems like INJOINIC - for some unknown reason - successfully prevented them to reach European & USA market)
++ IP2716.
