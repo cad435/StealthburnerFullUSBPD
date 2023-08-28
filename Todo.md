@@ -6,5 +6,9 @@ PowerFeeder: Not somewehere: when R16 is placed, feeder will only function when 
 PowerFeeder: Integrate 6A Fuse into all path. Preferably swappable ones
 PowerFeeder: Increase C4 to a 1uF Capacitor
 
+--> Powerfeeder needs new Gerber Version
 
 PD-Toolhead: Remove R13 & R15 as it interferes with USB-PD
+PD-Toolhead: populate R11 Resistor. Without it, CH224K won't have power
+
+-> PD-Toolhead, Power over USB-PD and Datatransfer confirmed working. No gerber-changes needed, only assembly-options for now
