@@ -8,6 +8,8 @@ PowerFeeder: Integrate 6A Fuse into all path. Preferably swappable ones
 
 PowerFeeder: Increase C4 to a 1uF Capacitor
 
+PowerFeeder: USB-Port Indicator LED's for Upstream Port 1 and 4 are switched
+
 PowerFeeder: what if the Hotend-FET fails into short circuit? We want a way to separate power if needed.
 --> Second input for 5V and 24V will be switched on when in "production"? Does this interfere with the PD-Delivery?
 
