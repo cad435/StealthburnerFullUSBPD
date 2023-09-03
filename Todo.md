@@ -25,3 +25,4 @@ PD-Toolhead: populate R11 Resistor. Without it, CH224K won't have power
 -> PD-Toolhead, Power over USB-PD and Datatransfer confirmed working. No gerber-changes needed, only assembly-options for now
 
 PD-Toolhead: FAN0/1 Doku is wrong. Top Fan is PB8, Bottom Fan is PB9
+PD-Toolhead: RX on TMC driver servers as CS pin for SPI drivers
