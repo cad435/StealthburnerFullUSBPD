@@ -26,3 +26,6 @@ PD-Toolhead: populate R11 Resistor. Without it, CH224K won't have power
 
 PD-Toolhead: FAN0/1 Doku is wrong. Top Fan is PB8, Bottom Fan is PB9
 PD-Toolhead: RX on TMC driver servers as CS pin for SPI drivers
+
+PD-Toolhead: C18 & C22 are rated for 16V need 25V --> Increase Value if possible
+PD-Toolhead: change R22 to 680k, change R24 to 100nF
