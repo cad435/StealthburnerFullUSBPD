@@ -18,14 +18,12 @@ PowerFeeder: what if the Hotend-FET fails into short circuit? We want a way to s
 ___
 
 
-PD-Toolhead: Remove R13 & R15 as it interferes with USB-PD
+Done - PD-Toolhead: Remove R13 & R15 as it interferes with USB-PD
 
-PD-Toolhead: populate R11 Resistor. Without it, CH224K won't have power
+Done - PD-Toolhead: populate R11 Resistor. Without it, CH224K won't have power
 
--> PD-Toolhead, Power over USB-PD and Datatransfer confirmed working. No gerber-changes needed, only assembly-options for now
+Done - PD-Toolhead: FAN0/1 Doku is wrong. Top Fan is PB8, Bottom Fan is PB9
+Done - PD-Toolhead: RX on TMC driver servers as CS pin for SPI drivers
 
-PD-Toolhead: FAN0/1 Doku is wrong. Top Fan is PB8, Bottom Fan is PB9
-PD-Toolhead: RX on TMC driver servers as CS pin for SPI drivers
-
-PD-Toolhead: C18 & C22 are rated for 16V need 25V --> Increase Value if possible
-PD-Toolhead: change R22 to 680k, change R24 to 100nF
+Done - PD-Toolhead: C18 & C22 are rated for 16V need 25V --> Increase Value if possible
+Done - PD-Toolhead: change R22 to 680k, change R24 to 100nF
