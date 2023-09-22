@@ -12,6 +12,7 @@ I asked around at the Voron-Discord (May 2023), only to find out that there was 
 
 The Project consists of 2 Boards:
  - The "Feeder" PCB which basically integrates a 4-Port USB 2.0 Hub, some step-Down converter and USB-PD source frontend IC's
+   -> The USB2.0 Hub was removed in later revisions, as it was to unreliable.
  - The "Toolhead" PCB which consists of an MCU and the neccessary hardware to run fans, heaters, thermistors and the like. 
 
 
@@ -46,4 +47,4 @@ Possible Candidates:
 After a lot of debugging, one is working completely - The toolhead itself. The Gerbers I have are usable on first try. However some improvements were made for the next version.
 
 The feeder presents itself pretty challenging. The FE1.1 used as a USB-Hub on that board is turning itself off when current for heating is drawn - I have no Idea why, but I suspect an EMI-Problem. Also, I recently learned, that with my setup, the store-bought USB-Hub (which also utilizes a FE1.1) have its trouble with klipper. For everything else it works fine. 
-Therefore I made the decision to completely omit the on-board USB-Hub and make a single "Power-Infuser" board. It will take a single USB-Signal as well as 24V Power in and will provide USB2.0 Data and PD on the other side. No integrated hub. The Diagram is updated
+Therefore I made the decision to completely omit the on-board USB-Hub and make a single "Power-Infuser" board. It will take a single USB-Signal as well as 24V Power in and will provide USB2.0 Data and PD on the other side. No integrated hub. The Diagram is updated. In that version I'll try my best to integrate proper EMI-Shielding to the downstream USB-Hub.
