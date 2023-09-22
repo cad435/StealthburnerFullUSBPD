@@ -3,7 +3,8 @@ Two PCB's to connect a Voron Stealthburner Toolhead via USB-PD providing both po
 
 This is aimed at people which are either having some kind of toolchanging system (like me) or are for whatever reason are changing their toolheads often. Upsides of this project compared to CAN: One cable does it all. Plug it in, it'll work. Well and of course people who think USB-C is cool...
 
-![Konzept](https://github.com/cad435/StealthburnerFullUSBPD/assets/16453385/6de83345-7aa8-42fd-a45c-025c5a4657a1)
+![Konzept_V1 1](https://github.com/cad435/StealthburnerFullUSBPD/assets/16453385/bb35b941-6a64-407d-ad9a-111bf3519d7b)
+
 
 Out of my latest Project (Voron 2.4 with toolchanger) I felt the need to simplify connecting Stealthburner-Toolheads to the printer. USB-C PowerDelivery seems suitable. Although it'll only provide 20V to the Toolhead instead of the 24V, it should be good enough.
 
@@ -35,6 +36,14 @@ ___
 
 Alternatives are rare, as I try to find IC's which are not overly complicated and requires loads of loads of external components. I suspect more IC's of manufacturers like INJOINIC or WCH to slowly get those "one in a package" IC's for PD.
 
+
 Possible Candidates:
 + IP5389 which essentially combines the Buck converter and PD-source into one IC (but those chips are only available on taobao, seems like INJOINIC - for some unknown reason - successfully prevented them to reach European & USA market)
 + IP2716.
+
+
+**Update 2023-09-22:**
+After a lot of debugging, one is working completely - The toolhead itself. The Gerbers I have are usable on first try. However some improvements were made for the next version.
+
+The feeder presents itself pretty challenging. The FE1.1 used as a USB-Hub on that board is turning itself off when current for heating is drawn - I have no Idea why, but I suspect an EMI-Problem. Also, I recently learned, that with my setup, the store-bought USB-Hub (which also utilizes a FE1.1) have its trouble with klipper. For everything else it works fine. 
+Therefore I made the decision to completely omit the on-board USB-Hub and make a single "Power-Infuser" board. It will take a single USB-Signal as well as 24V Power in and will provide USB2.0 Data and PD on the other side. No integrated hub. The Diagram is updated
