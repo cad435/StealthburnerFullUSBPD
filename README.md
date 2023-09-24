@@ -4,7 +4,8 @@ Two PCB's to connect a Voron Stealthburner Toolhead via USB-PD providing both po
 This is aimed at people which are either having some kind of toolchanging system (like me) or are for whatever reason are changing their toolheads often. Upsides of this project compared to CAN: One cable does it all. Plug it in, it'll work. Well and of course its for people who think USB-C PowerDelivery is cool...
 
 
-![Konzept_V1 1](https://github.com/cad435/StealthburnerFullUSBPD/assets/16453385/cb2f9884-e8ec-4a6b-b170-71c369aa946f)
+![Konzept_V1 1](https://github.com/cad435/StealthburnerFullUSBPD/assets/16453385/a327e2c8-aeb2-4a48-b4ca-d89504ecc0b9)
+
 
 
 
