@@ -24,9 +24,11 @@ Done - PD-Toolhead: Remove R13 & R15 as it interferes with USB-PD
 Done - PD-Toolhead: populate R11 Resistor. Without it, CH224K won't have power
 
 Done - PD-Toolhead: FAN0/1 Doku is wrong. Top Fan is PB8, Bottom Fan is PB9
+
 Done - PD-Toolhead: RX on TMC driver servers as CS pin for SPI drivers
 
 Done - PD-Toolhead: C18 & C22 are rated for 16V need 25V --> Increase Value if possible
+
 Done - PD-Toolhead: change R22 to 680k, change R24 to 100nF
 
 Done - Replaced Switching FET's to beefier ones
