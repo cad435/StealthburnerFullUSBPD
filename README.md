@@ -44,10 +44,12 @@ Alternatives are rare, as I try to find IC's which are not overly complicated an
 Possible Candidates:
 + IP5389 which essentially combines the Buck converter and PD-source into one IC (but those chips are only available on taobao, seems like INJOINIC - for some unknown reason - successfully prevented them to reach European & USA market)
 + IP2716.
++ HUSB360 from Hynetek
++ HUSB362/HUSB350??
 
 
 **Update 2023-09-22:**
-After a lot of debugging, one is working completely - The toolhead itself. The Gerbers I have are usable on first try. However some improvements were made for the next version.
+After a lot of debugging, one part is working completely - The toolhead itself. The Gerbers I have are usable on first try. However some improvements were made for the next version.
 
 The feeder presents itself pretty challenging. The FE1.1 used as a USB-Hub on that board is turning itself off when current for heating is drawn - I have no Idea why, but I suspect an EMI-Problem. Also, I recently learned, that with my setup, the store-bought USB-Hub (which also utilizes a FE1.1) have its trouble with klipper. For everything else it works fine. 
 Therefore I made the decision to completely omit the on-board USB-Hub and make a single "Power-Infuser" board. It will take a single USB-Signal as well as 24V Power in and will provide USB2.0 Data and PD on the other side. No integrated hub. The Diagram is updated. In that version I'll try my best to integrate proper EMI-Shielding to the downstream USB-Hub.
