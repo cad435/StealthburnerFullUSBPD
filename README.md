@@ -27,9 +27,10 @@ Right now I'm planning on using standard "non e-marked" USB-C cables which will 
 Using 24V/40W heater cartridges with 20V will decrease power consumption to about 30W wich (I guess) should be enough for the standard Voron user (not enough though for High-Speed/High-Flow printing etc). That leaves 30W for the stepper-motors, fans etc. (should be plenty enough)
 
 **Comment on the Relay switching 5V AUX into the Powerpath:**
-This is actually one of the biggest features of the board - Another level of protection for avoiding damage to the printer an possibly other things.
-If the Heater Swithing-FET fails an shorts, the cartridge would heat up indefinately untill it fails, ignites or whatever it'll happen. Klipper can't do anything against it, becaus it will have no hardware controll ofer the FET anymore.
-UNLESS you have another switch to cut off the power - the relay. However, we don't want to cut powercompletely, otherwise we can't talk to our MCU anymore an therefore would not be able to restart klipper. So we just "switch" power to another safe Level (5V). with 5V the heater doesn't have enough power to get seriously hot (I tested, it merely gets 50C hot).
+This is actually one of the biggest features of the board - another level of protection for avoiding damage to the printer and possibly other things.
+If the heater switching-FET fails and shorts out (zero resistance, actually not uncommon on FET's), the cartridge would heat up indefinately untill it fails, ignites or whatever it'll happen. Klipper can't do anything against it, because it will have no hardware controll over the FET and the Heater anymore.
+
+UNLESS you have another switch to cut off the power - the relay. However, we don't want to cut power completely, otherwise we can't talk to our MCU anymore an therefore would not be able to restart klipper. So we just "switch" power to another safe Level (5V). With 5V the heater doesn't have enough power to get seriously hot (I tested, it merely gets 50C hot).
 
 Klipper configurations will be posted eventually.
 
