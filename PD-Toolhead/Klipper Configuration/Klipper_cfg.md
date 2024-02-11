@@ -1,0 +1,74 @@
+## "MF0" is short for "Multi Feeder 0"
+## note that only the lines which are relevant pins for the PD-Hardware PCB are written down!
+
+
+[mcu MF0]
+serial: /dev/serial/<path here>
+
+[extruder]
+step_pin: MF0:PB1
+dir_pin: MF0:PA2
+enable_pin: !MF0:PA1
+
+[...]
+
+heater_pin: MF0:PB5
+
+[...]
+
+sensor_pin: MF0:PA0
+
+[...]
+
+# SPI bus definitions see https://github.com/Klipper3d/klipper/blob/master/src/stm32/spi.c
+
+[tmc2130 extruder]
+cs_pin: MF0:PB11
+#   The pin corresponding to the TMC2130 chip select line. This pin
+#   will be set to low at the start of SPI messages and raised to high
+#   after the message completes. This parameter must be provided.
+#spi_speed:
+#spi_bus: spi2
+spi_software_sclk_pin: MF0:PB13
+spi_software_mosi_pin: MF0:PB15
+spi_software_miso_pin: MF0:PB14
+
+[...]
+
+# fan for the Extruder Heatsink
+[heater_fan MF0_HFan]
+pin: MF0:PB9
+[...]
+hardware_pwm: false
+shutdown_speed: 1.0
+
+# Partcooling Fan on Extruder 0
+[fan_generic MF0_PFan]
+pin: MF0:PB8
+hardware_pwm: false
+cycle_time: 0.08 #seems to be a good time to not get to much fan noise
+
+
+# Status LED, just s Single green LED on the board (see Pindescription PDF)
+
+[led _MF0_StatLed]
+white_pin:
+    MF0:PB3
+cycle_time: 0.1
+initial_WHITE: 1.0
+#   Sets the initial LED color. Each value should be between 0.0 and
+#   1.0. The default for each color is 0.
+
+
+#Neopixel LEDs connected to the LED-Header
+[neopixel MF0_leds]
+pin: MF0:PA15
+
+[...]
+
+
+# this is the ADXL if connected to the Toolhead PCB
+[adxl345]
+cs_pin: MF0:PB4
+spi_bus: spi1
+axes_map: z,y,x
