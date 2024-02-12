@@ -43,7 +43,7 @@ Using 24V/40W heater cartridges with 20V will decrease power consumption to abou
 This is actually one of the biggest features of the board - another level of protection for avoiding damage to the printer and possibly other things.
 If the heater switching-FET fails and shorts out (zero resistance, actually not uncommon on FET's), the cartridge would heat up indefinately until it fails, ignites or whatever it'll happen. Klipper can't do anything against it, because it will have no hardware controll over the FET and the Heater anymore.<br/>
 
-UNLESS you have another switch to cut off the power - the relay. However, we don't want to cut power completely, otherwise we can't talk to our MCU anymore an therefore would not be able to restart klipper. So we just "switch" power to another safe Level (5V). With 5V the heater doesn't have enough power to get seriously hot (I tested, it merely gets 50C hot).
+UNLESS you have another switch to cut off the power - which comes in form of the FET Q1. It'll get switched off from klipper, as Klipper is able to disable the PD-Chip, therefore cutting power completely. However, we don't want to cut power completely, otherwise we can't talk to our MCU anymore an therefore would not be able to restart klipper. So the relay gets Switched also, redirecting the Powerpath from the "default" Stepdown (5V) to the Powerpath. So we just "switch" power to another safe Level (5V). With 5V the heater doesn't have enough power to get seriously hot (I tested, it merely gets 50C hot).
 
 
 
