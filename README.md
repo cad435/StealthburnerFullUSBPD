@@ -17,6 +17,9 @@ The Project consists of 2 Boards:
  - The "Feeder" PCB which basically integrates some step-Down converter and a USB-PD source IC's
  - The "Toolhead" PCB which consists of an MCU and the neccessary hardware to run fans, heaters, thermistors and the like. 
 
+<p align="center">
+ <img src="https://github.com/cad435/StealthburnerFullUSBPD/assets/16453385/4bae19de-991d-4e09-b4a6-d78c65856573" alt="drawing" width="400"/>
+</p>
 
 --> If you use a 4-port USB-Hub, use a hlaf-decent one. I had bad experiences with the 3€ ultra-cheap hubs from Aliexpress, I'm running on a (cheap) Anker-Hub smoothly now.
 
