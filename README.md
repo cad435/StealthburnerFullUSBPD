@@ -1,3 +1,9 @@
+
+## Pre WARNING:
+since I uploaded the "final" version on 2024-02-15 I suddnely get a ton of EMI problems over the USB-Lines. I'll have to work some more, to get that fixed.<br/>
+Right now I have absolutely zero Idea why that happens. I know the USB-Layout is not perfectly optimal. The Problem is, it seems to only happen when printing PETG, ABS an really anything else works fine and that makes absolutely zero sense to me...
+
+
 # StealthburnerFullUSBPD
 Two PCB's to connect a Voron Stealthburner Toolhead via USB-PD providing both power and data.
 
