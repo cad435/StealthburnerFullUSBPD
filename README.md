@@ -1,7 +1,8 @@
 
-## Pre WARNING:
-since I uploaded the "final" version on 2024-02-15 I suddnely get a ton of EMI problems over the USB-Lines. I'll have to work some more, to get that fixed.<br/>
-Right now I have absolutely zero Idea why that happens. I know the USB-Layout is not perfectly optimal. The Problem is, it seems to only happen when printing PETG, ABS an really anything else works fine and that makes absolutely zero sense to me...
+## Before you download:
+There are new Versions with better EMI protection regarding the USB Data lines on the way. Also, on the feeder I connected the relay-coil diode wrong. It'll also be fixed.
+
+The current versions however are working. 
 
 
 # StealthburnerFullUSBPD
