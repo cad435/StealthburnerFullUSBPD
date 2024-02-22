@@ -1,6 +1,6 @@
 
 ## Before you download:
-There are new Versions with better EMI protection regarding the USB Data lines on the way. Also, on the feeder I connected the relay-coil diode wrong. It'll also be fixed.
+There are new Versions with better EMI protection regarding the USB Data lines on the way. Also, on the feeder I connected the free-wheeling diode ont the wrong. It'll also be fixed.
 
 The current versions however are working. 
 
