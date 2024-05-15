@@ -1,4 +1,6 @@
-You can use the attached V1.2_JLC_PCBA_CPL.xlsx file to directly upload to JLCPCBA. Please keep in mind this is UNTESTED! (I have access to a PCBA-Line, therefore I did not use this)
+You can use the attached V1.2_JLC_PCBA_CPL.xlsx file to directly upload to JLCPCBA. Please keep in mind this is UNTESTED! (I have access to a PCBA-Line, therefore I did not use this) <br> <br>
+
+I found it working with all the Ferrite beads (L1/L4/L5) beeing only ~300R@100Mhz, as well as the common-mode choke beeing just ~600R@100Mhz. <br> <br>
 
 Use two M2 brass inserts on the 2 holes beside the USB-C Connector. <br> <br>
 
