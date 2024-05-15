@@ -1,3 +1,5 @@
+You can use the attached V1.2_JLC_PCBA_CPL.xlsx file to directly upload to JLCPCBA. Please keep in mind this is UNTESTED! (I have access to a PCBA-Line, therefore I did not use this)
+
 Use two M2 brass inserts on the 2 holes beside the USB-C Connector. <br> <br>
 
 ![2024-05-16-00-29-13-719](https://github.com/cad435/StealthburnerFullUSBPD/assets/16453385/809f11b5-40af-4fe9-a6dc-24aade0a903b)
