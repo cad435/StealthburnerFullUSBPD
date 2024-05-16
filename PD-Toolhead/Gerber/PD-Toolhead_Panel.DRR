@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------------------------------------------------------------------
-NCDrill File Report For: PD-Toolhead_Panel.PcbDoc   05.04.2024  23:42:43
+NCDrill File Report For: PD-Toolhead_Panel.PcbDoc   16.05.2024  22:13:55
 ----------------------------------------------------------------------------------------------------------------------------------
 
 Layer Pair : Signal Top to Signal Bot
@@ -18,8 +18,9 @@ T6      55mil (1.397mm)                                           Round         
 T7      55mil (1.4mm)                                             Round             1         PTH        0.00inch (0.00mm)
 T8      122mil (3.1mm)                                            Round             2         PTH        0.70inch (17.76mm)
 T9      126mil (3.2mm)                                            Round             2         PTH        0.69inch (17.51mm)
-T10     27mil (0.675mm)                                           Round             2         NPTH       0.23inch (5.78mm)
+T10     26mil (0.65mm)                                            Round             16        NPTH       4.62inch (117.38mm)
+T11     27mil (0.675mm)                                           Round             2         NPTH       0.23inch (5.78mm)
 ----------------------------------------------------------------------------------------------------------------------------------
-Totals                                                                              190
+Totals                                                                              206
 
-Total Processing Time (hh:mm:ss) : 00:00:00
+Total Processing Time (hh:mm:ss) : 00:00:01
