@@ -1,10 +1,7 @@
 
 ## Before you download:
-There are new Versions with better EMI protection regarding the USB Data lines on the way. Also, on the feeder I connected the free-wheeling diode wrong. It'll also be fixed.
-
-The current versions however are working. <br>
-
- - Update 2024-05-16: I implemented the new and EMI-improved toolhead-boards and my errors went away. However, new feeders are untested right now. As it is working, I'll only upload the EMI-improved toolhead for now. While manufacturing the new toolheads I also discovered that some of the STM32F072 MCUs I used, are lacking pin 1 markers. It looked to me as if they where sanded down and re-marked (yes I bought them from Aliexpress). I'm not sure if the new EMI-improving did the trick or if some of the MCU's where just faulty. However I do like the new EMI-protection features, so it definately was not a bad investment. 
+ - Update 2024-05-16: I implemented the new and EMI-improved toolhead-boards. However, the "new-EMI" feeders are untested right now. As it is working, I'll only upload the EMI-improved toolhead for now. While manufacturing the new toolheads I also discovered that some of the STM32F072 MCUs I used, are lacking pin 1 markers. It looked to me as if they where sanded down and re-marked (yes I bought them from Aliexpress). I'm not sure if the new EMI-improving did the trick or if some of the MCU's where just faulty. However I do like the new EMI-protection features, so it definately was not a bad investment.
+ - Update 2024-07-28 The New Toolheads, together with the "old" Feeders did print for nearly 100h without a single connection-loss. I consider that setup **tested and confirmed working**. A new 3D-Printer in my local makerspace is built right now which will use a "new-EMI" feeder, so that will be also tested in the future.  
 
 
 # StealthburnerFullUSBPD
