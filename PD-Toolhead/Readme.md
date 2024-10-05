@@ -1,4 +1,4 @@
-You can use the attached V1.2_JLC_PCBA_CPL.xlsx file to directly upload to JLCPCBA. Please keep in mind this is UNTESTED! (I have access to a PCBA-Line, therefore I did not use this) <br> <br>
+Update 2024-10-05: I accidentlly left R7 and R8 as series resistance values for the USB-Lines. For another setup, this proves to be too much series resistance. Therefore I replaced it with 0R. If you find yourself to have random disconnects I advice you to increase those values (20R should be enough!)
 
 I found it working with all the Ferrite beads (L1/L4/L5) beeing only ~300R@100Mhz, as well as the common-mode choke beeing just ~600R@100Mhz. <br> <br>
 
