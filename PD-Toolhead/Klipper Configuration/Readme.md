@@ -20,7 +20,24 @@ KIAUH v6 has the ability to save compile configs.
  - when try to build or build+flash KIAUH should present you the option to load the config.
 
 You also don't have to place the board in bootloader mode anymore. When flashing with KIAUH just select "connected via USB". The flash utility of KIAUH will place the board into bootloader-mode on its own. <br>
-I'm not exactly sure since when this is possible. My setup runs with KIAUH v6 and Klipper v0.12.0.
+I'm not exactly sure since when this is possible. My setup runs with KIAUH v6 and Klipper v0.12.0. <br><br>
+
+Be aware, that KIAUH may state a failed flash although flashing actually succeeds.<br>
+Inside your command-Line you are looking for the lines:
+```
+[...]
+
+Download        [=========================] 100%        36988 bytes
+Download done.
+File downloaded successfully
+Submitting leave request...
+
+[...]
+
+```
+
+See this post for additional reference:
+https://github.com/dw-0/kiauh/issues/545#issuecomment-2395065270
 
 ---
 
